@@ -1,0 +1,65 @@
+.index-header {
+	padding: 5vh auto;
+	height: 10vh;
+	width: 100vw;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgb(219, 219, 219);
+	position: fixed;
+	box-shadow: 0px 0px 30px gray;
+}
+
+.index-header a {
+	text-decoration: none;
+	padding: 2px 2px;
+	color: black;
+	border: 2px rgba(0, 0, 0, 0.294) solid;
+	border-radius: 5px;
+	height: max-content;
+	width: max-content;
+	box-shadow: 0px 0px 10px gray;
+}
+.index-container {
+	width: 90vw;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	padding-top: 15vh;
+}
+
+.index-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: calc(33% - 10px);
+	height: 300px;
+	background-color: #f8f9fa;
+	box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.454);
+}
+
+.index-card-img {
+	height: 30%;
+	background-position: center;
+	background-size: cover;
+	background-image: url(https://www.appartement-a-vendre.com/wp-content/uploads/2021/05/Appartement-Loue-a-Vendre-.jpeg);
+}
+.index-card-infos {
+	padding: 10px;
+}
+.index-card-infos h3 {
+	font-size: 26px;
+}
+.index-card-logo {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 10px;
+}
+
+.index-card-link {
+	padding: 20px;
+	width: 100%;
+	height: 20%;
+	background-color: white;
+}

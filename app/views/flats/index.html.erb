@@ -1,0 +1,41 @@
+<div class="index-header">
+  <h1>Welcome to AirBnB</h1>
+  <%= link_to 'Create New Flat', new_flat_path %>
+</div>
+
+<div class="index-container">
+
+<% @flats.each do |flat| %>
+
+
+    <div class="index-card">
+      <div class="index-card-img">
+
+      </div>
+      <div class="index-card-infos">
+        <h3><%= flat.name %></h3>
+        <p><%= flat.address %></p>
+      </div>
+
+      <div class="index-card-logo">
+        <i class="fa-solid fa-person">  <%= flat.number_of_guests %> </i>
+        <i class="fa-solid fa-euro-sign">  <%= flat.price_per_night %></i>
+      </div>
+
+      <div class="index-card-link">
+        <%= link_to 'More info', flat_path(flat) %>
+        <%= link_to 'Edit', edit_flat_path(flat) %>
+        <%= link_to 'Delete', flat_path(flat), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
+
+      </div>
+    </div>
+
+<% end %>
+
+</div>
+
+<%# t.string "name"
+    t.string "address"
+    t.text "description"
+    t.integer "price_per_night"
+    t.integer "number_of_guests" %>

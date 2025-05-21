@@ -1,0 +1,48 @@
+<div class="show-card-header">
+
+</div>
+<div class="show-container">
+
+  <div class="show-card-details show-card-parent">
+    <div class="show-card">
+      <h1><%= @flat.name %></h1>
+      <p><%= @flat.address %></p>
+    </div>
+    <div class="show-card">
+      <h4>A bit more about this flat..</h4>
+      <p><%= @flat.description %></p>
+    </div>
+  </div>
+
+  <div class="show-book-card show-card-parent">
+    <div class="show-card">
+      <h4>Book this place</h4>
+      <label for="start_date">From :</label>
+      <input type="date" id="start_date" name="start_date">
+
+      <label for="end_date">To :</label>
+      <input type="date" id="end_date" name="end_date">
+
+       <button type="submit" class="book-button">Book</button>
+    </div>
+    <div class="show-card">
+      <h4>Details</h4>
+      <div class="detail-icon">
+        <i class="fa-solid fa-person">  <%= @flat.number_of_guests %> </i>
+        <i class="fa-solid fa-euro-sign">  <%= @flat.price_per_night %></i>
+      </div>
+    </div>
+    <div class="show-card">
+      <h6>Share</h6>
+      <div class="share-icon">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+        <i class="fa-solid fa-square-envelope"></i>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+ <%= link_to 'Back', flats_path %>

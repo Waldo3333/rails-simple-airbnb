@@ -1,0 +1,59 @@
+.show-card-header {
+	height: 30vh;
+	background-image: url(https://plan-a.ca/wp-content/uploads/2022/12/4800_paul_pouliot_30207_web-2560x1486.jpg);
+	position: relative;
+	background-position: center;
+	background-size: cover;
+}
+.show-container {
+	position: absolute;
+	width: 90vw;
+	left: 5vw;
+	top: 20vh;
+	display: flex;
+	gap: 3vw;
+}
+
+.show-card-parent {
+	display: flex;
+	flex-direction: column;
+	gap: 3vh;
+}
+.show-card {
+	background-color: #f8f9fa;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	border-radius: 10px;
+}
+.show-card-details {
+	width: 70%;
+}
+
+.show-book-card {
+	width: 30%;
+}
+
+.share-icon {
+	display: flex;
+	justify-content: flex-end;
+	gap: 3vw;
+	font-size: 26px;
+	margin-right: 20px;
+	margin-bottom: 3px;
+}
+
+.detail-icon {
+	display: flex;
+	gap: 40px;
+}
+.share-icon i {
+	cursor: pointer;
+}
+
+.book-button {
+	background-color: #29a645;
+	border-radius: 3px;
+	border: none;
+	margin-top: 10px;
+}
